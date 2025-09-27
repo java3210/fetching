@@ -1176,7 +1176,7 @@ function Env.new(meta)
 	ThumnailPf.BorderColor3 = Color3.new(0, 0, 0)
 	ThumnailPf.BorderSizePixel = 0
 	ThumnailPf.Size = UDim2.new(0, 40, 0, 40)
-	ThumnailPf.Image = game.Players:GetUserThumbnailAsync(3315816074, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+	ThumnailPf.Image = "rbxassetid://73304750164029"
 
 	UICorner_4.Parent = ThumnailPf
 	UICorner_4.CornerRadius = UDim.new(1, 0)
@@ -1201,7 +1201,7 @@ function Env.new(meta)
 	TitlePf.BorderSizePixel = 0
 	TitlePf.Position = UDim2.new(0, 0, -0.125, 0)
 	TitlePf.Font = Enum.Font.GothamSemibold
-	TitlePf.Text = 'real_khawkhaw - พี่ข้าวคนสวย'
+	TitlePf.Text = '96soul'
 	TitlePf.TextColor3 = Color3.new(1, 1, 1)
 	TitlePf.TextSize = 13
 	TitlePf.TextXAlignment = Enum.TextXAlignment.Left
@@ -1220,7 +1220,7 @@ function Env.new(meta)
 	DescPf.BorderSizePixel = 0
 	DescPf.Position = UDim2.new(0, 0, -0.125, 0)
 	DescPf.Font = Enum.Font.GothamMedium
-	DescPf.Text = "@realax_inboxz"
+	DescPf.Text = "@real96soul"
 	DescPf.TextColor3 = Color3.new(1, 1, 1)
 	DescPf.TextSize = 10
 	DescPf.TextTransparency = 0.5
