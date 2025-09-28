@@ -184,7 +184,7 @@ Tog = function(p, frame, bn, i)
 				t = 0.2,
 				s = "Back",
 				d = "Out",
-				g = {Size = UDim2.new(0, 70, 0, 70)}
+				g = {Size = UDim2.new(0, 45, 0, 45)}
 			}):Play()
 			task.wait(0.016) 
 			tw({
