@@ -383,19 +383,7 @@ do
 		end
 
 		function L_25_.Icon(L_99_arg0)
-			if typeof(L_99_arg0) == 'number' then
-				return "rbxassetid://" .. tostring(L_99_arg0)
-			end
-
-			if typeof(L_99_arg0) == 'string' and string.find(L_99_arg0, "rbxassetid://") then
-				return L_99_arg0
-			end
-			
-			if typeof(L_99_arg0) == 'string' and not string.find(L_99_arg0, "rbxassetid://") then
-				return L_23_.Icon(L_99_arg0)
-			end
-
-			return L_99_arg0
+			return L_23_.Icon(L_99_arg0)
 		end
 
 		function L_25_.AddIcons(L_100_arg0, L_101_arg1)
@@ -4942,7 +4930,7 @@ do
 
 		return L_851_
 	end
-	function L_1_.y()
+	function L_1_.y() -- Slider Components
 		local L_863_ = L_1_.load'a'
 		local L_864_ = L_863_.New
 		local L_865_ = L_863_.NewRoundFrame
@@ -5616,7 +5604,7 @@ do
 			return L_906_
 		end
 	end
-	function L_1_.z()
+	function L_1_.z() -- Paragarp
 		local L_957_ = L_1_.load'a'
 		local L_958_ = L_957_.New
 
@@ -5666,7 +5654,7 @@ do
 
 		return L_959_
 	end
-	function L_1_.A()
+	function L_1_.A() -- Button
 		local L_969_ = L_1_.load'a'
 		local L_970_ =
 			L_969_.New
@@ -5768,12 +5756,24 @@ do
 
 		return L_971_
 	end
-	function L_1_.B()
+	function L_1_.B() -- Icon Components
 		local L_978_ = {}
 
 		local L_979_ = L_1_.load'a'
 		local L_980_ = L_979_.New
 		local L_981_ = L_979_.Tween
+		
+		local function sss(L_99_arg0)
+			if typeof(L_99_arg0) == 'number' then
+				return "rbxassetid://" .. tostring(L_99_arg0)
+			end
+
+			if typeof(L_99_arg0) == 'string' and string.find(L_99_arg0, "rbxassetid") then
+				return L_99_arg0
+			end
+
+			return L_99_arg0
+		end
 
 
 		function L_978_.New(L_982_arg0, L_983_arg1, L_984_arg2, L_985_arg3)
@@ -5788,9 +5788,9 @@ do
 					BackgroundTransparency = 1,
 					AnchorPoint = Vector2.new(0.5, 0.5),
 					Position = UDim2.new(0.5, 0, 0.5, 0),
-					Image = L_979_.Icon(L_983_arg1)[1],
-					ImageRectOffset = L_979_.Icon(L_983_arg1)[2].ImageRectPosition,
-					ImageRectSize = L_979_.Icon(L_983_arg1)[2].ImageRectSize,
+					Image = sss(L_983_arg1),
+					--ImageRectOffset = L_979_.Icon(L_983_arg1)[2].ImageRectPosition,
+					--ImageRectSize = L_979_.Icon(L_983_arg1)[2].ImageRectSize,
 					ImageTransparency = 1,
 					ImageColor3 = Color3.new(0, 0, 0),
 				})
@@ -5900,7 +5900,7 @@ do
 
 		return L_978_
 	end
-	function L_1_.C()
+	function L_1_.C() --??
 		local L_993_ = {}
 
 		local L_994_ = L_1_.load'a'
@@ -5996,7 +5996,7 @@ do
 
 		return L_993_
 	end
-	function L_1_.D()
+	function L_1_.D() -- Toggle
 		local L_1007_ = L_1_.load'a'
 		local L_1008_ =
 			L_1007_.New
@@ -6093,7 +6093,7 @@ do
 
 		return L_1012_
 	end
-	function L_1_.E()
+	function L_1_.E() -- Slider
 		local L_1025_ = L_1_.load'a'
 		local L_1026_ = L_1025_.New
 		local L_1027_ = L_1025_.Tween
@@ -6341,7 +6341,7 @@ do
 
 		return L_1028_
 	end
-	function L_1_.F()
+	function L_1_.F() -- Enumaretion
 		local L_1066_ = game:GetService"UserInputService"
 
 		local L_1067_ = L_1_.load'a'
@@ -6477,7 +6477,7 @@ do
 
 		return L_1070_
 	end
-	function L_1_.G()
+	function L_1_.G() -- Textfield
 		local L_1086_ = L_1_.load'a'
 		local L_1087_ = L_1086_.New
 		local L_1088_ =
@@ -6587,7 +6587,7 @@ do
 
 		return L_1089_
 	end
-	function L_1_.H()
+	function L_1_.H() -- Dropdown List
 		local L_1104_ = {}
 
 		local L_1105_ = game:GetService"UserInputService"
@@ -6765,7 +6765,6 @@ do
 									L_1144_forvar1.UIElements.TabItem.Visible = false
 								end
 								L_1120_func()
-								L_1114_arg1.UIElements.Menu.Frame.ScrollingFrame.CanvasPosition = Vector2.new(0, 0)
 							end
 						end, true)
 						L_1121_.Size = UDim2.new(1, 0, 0, L_1115_arg2.SearchBarHeight)
@@ -7135,7 +7134,7 @@ do
 
 		return L_1104_
 	end
-	function L_1_.I()
+	function L_1_.I() -- Dropdown
 		game:GetService"UserInputService"
 		game:GetService"Players".LocalPlayer:GetMouse()
 		local L_1170_ =
@@ -7263,7 +7262,7 @@ do
 
 		return L_1178_
 	end
-	function L_1_.J()
+	function L_1_.J() -- Code Block?
 
 
 
@@ -7506,7 +7505,7 @@ do
 
 		return L_1185_
 	end
-	function L_1_.K()
+	function L_1_.K() -- ?
 		local L_1213_ = {}
 
 		local L_1214_ = L_1_.load'a'
@@ -7726,7 +7725,7 @@ do
 
 		return L_1213_
 	end
-	function L_1_.L()
+	function L_1_.L() -- Code Block?
 		local L_1231_ = L_1_.load'a'
 		local L_1232_ =
 			L_1231_.New
@@ -7793,7 +7792,7 @@ do
 
 		return L_1234_
 	end
-	function L_1_.M()
+	function L_1_.M() -- Colorpicker
 		local L_1246_ = L_1_.load'a'
 		local L_1247_ = L_1246_.New
 		local L_1248_ =
@@ -8525,7 +8524,7 @@ do
 
 		return L_1257_
 	end
-	function L_1_.N()
+	function L_1_.N() -- Section
 		local L_1358_ = L_1_.load'a'
 		local L_1359_ = L_1358_.New
 		local L_1360_ = L_1358_.Tween
@@ -8786,7 +8785,7 @@ do
 
 		return L_1361_
 	end
-	function L_1_.O()
+	function L_1_.O() -- Line
 		local L_1381_ = L_1_.load'a'
 		local L_1382_ = L_1381_.New
 
@@ -8818,7 +8817,7 @@ do
 
 		return L_1383_
 	end
-	function L_1_.P()
+	function L_1_.P() -- Space
 		local L_1388_ = L_1_.load'a'
 		local L_1389_ = L_1388_.New
 
@@ -8839,7 +8838,7 @@ do
 
 		return L_1390_
 	end
-	function L_1_.Q()
+	function L_1_.Q() -- Image
 		local L_1394_ = L_1_.load'a'
 		local L_1395_ = L_1394_.New
 
@@ -8908,7 +8907,7 @@ do
 
 		return L_1396_
 	end
-	function L_1_.R()
+	function L_1_.R() -- REQUIRED MODULE
 		return {
 			Elements = {
 				Paragraph = L_1_.load'z',
@@ -9015,7 +9014,7 @@ do
 
 		}
 	end
-	function L_1_.S()
+	function L_1_.S() -- Tab
 		game:GetService"UserInputService"
 		local L_1439_ = game.Players.LocalPlayer:GetMouse()
 
@@ -9544,7 +9543,7 @@ do
 
 		return L_1445_
 	end
-	function L_1_.T()
+	function L_1_.T() -- Section TABs?
 		local L_1490_ = {}
 
 
@@ -9720,7 +9719,7 @@ do
 
 		return L_1490_
 	end
-	function L_1_.U()
+	function L_1_.U() -- ?
 		return {
 			Tab = "table-of-contents",
 			Paragraph = "type",
@@ -9734,7 +9733,7 @@ do
 			Colorpicker = "palette",
 		}
 	end
-	function L_1_.V()
+	function L_1_.V() -- Textflield?
 		game:GetService"UserInputService"
 
 		local L_1508_ = {
@@ -10275,7 +10274,7 @@ do
 
 		return L_1508_
 	end
-	function L_1_.W()
+	function L_1_.W() -- Init Window
 
 		local L_1559_ = game:GetService"UserInputService"
 		game:GetService"RunService"
